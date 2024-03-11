@@ -9,17 +9,17 @@ function initPage() {
     
     // create nav buttons
     const homeBtn = document.createElement('button');
-    homeBtn.id = '#home-btn';
+    homeBtn.id = 'home-btn';
     homeBtn.textContent = 'HOME'
     //homeBtn.addEventListener('click', )
 
     const menuBtn = document.createElement('button');
-    menuBtn.id = '#menu-btn';
+    menuBtn.id = 'menu-btn';
     menuBtn.textContent = 'MENU'
     //menuBtn.addEventListener('click', )
 
     const aboutBtn = document.createElement('button');
-    aboutBtn.id = '#about-btn';
+    aboutBtn.id = 'about-btn';
     aboutBtn.textContent = 'ABOUT';
     nav.append(homeBtn, menuBtn, aboutBtn);
     //aboutBtn.addEventListener('click', )
