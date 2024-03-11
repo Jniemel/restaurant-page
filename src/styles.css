@@ -20,17 +20,19 @@ body {
     height: fit-content;
     background: url('./body-bg.jpg');
     background-size: cover;
+    
 }
 
 header {
-    height: auto;
+    width: fill;    
+    height: auto;    
     background-color: rgba(0, 0, 0, 0.75);       
     padding: 0.75em;
     position: sticky;
     top: 0;       
 }
 
-nav {    
+nav {      
     display: flex;
     justify-content: space-around;
 }
@@ -41,7 +43,7 @@ nav {
     display: flex;
     flex-direction: column;
     padding: 1.5em; 
-    gap: 1.5em;    
+    gap: 1.5em;            
 }
 
 .nav-button {
@@ -55,7 +57,7 @@ nav {
     box-sizing: border-box;
     color: #fff;
     border: none;
-    font-size: 1.5em;
+    font-size: 1.6rem;
     transition: all 0.3s ease-in-out;
     z-index: 1;
     overflow: hidden;    
@@ -67,13 +69,14 @@ nav {
     display: flex;
     align-items: center;       
     font-size: 1.8em;
+    overflow: auto;
 }
 
 .content-container div {    
     background-color: rgba(0, 0, 0, 0.75);
-    padding: 0.5em;
-    height: 100%;
+    padding: 0.5em;    
     height: 400px;
+    min-width: 400px;
     overflow: auto;
 }
 

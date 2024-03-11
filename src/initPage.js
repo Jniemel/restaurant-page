@@ -5,30 +5,35 @@ function initPage() {
     // references
     const header = document.querySelector('header');
     const nav = header.querySelector('nav');
-    const content = document.querySelector('#content');    
+    const content = document.querySelector('#content');
+    
     // create nav buttons
     const homeBtn = document.createElement('button');
     homeBtn.id = '#home-btn';
-    homeBtn.textContent = 'Home'
+    homeBtn.textContent = 'HOME'
     //homeBtn.addEventListener('click', )
+
     const menuBtn = document.createElement('button');
     menuBtn.id = '#menu-btn';
-    menuBtn.textContent = 'Menu'
+    menuBtn.textContent = 'MENU'
     //menuBtn.addEventListener('click', )
+
     const aboutBtn = document.createElement('button');
     aboutBtn.id = '#about-btn';
-    aboutBtn.textContent = 'About';
+    aboutBtn.textContent = 'ABOUT';
     nav.append(homeBtn, menuBtn, aboutBtn);
     //aboutBtn.addEventListener('click', )
+
+    // add class to nav buttons
     const navBtns = nav.querySelectorAll('button');
     navBtns.forEach(btn => {
         btn.classList.add('nav-button');        
     });
+    
     header.appendChild(nav);
     
-    home();
-     
-    
+    // init home-tab as default 
+    home();    
 }
 
 export default initPage;
