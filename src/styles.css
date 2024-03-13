@@ -75,7 +75,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;   
-    padding: 1em;    
+    padding: 0.5em;    
     height: 400px;
     min-width: 400px;
     font-size: 2.5rem;
@@ -89,7 +89,7 @@ nav {
 
 .menu {
     flex-grow: 1;
-    background-color: #000000bf;
+    background-color: hsla(0, 0%, 0%, 0.75);
     font-size: 2.5rem;
     margin: 0 1em 0 1em;
     padding: 1em;
@@ -137,5 +137,33 @@ nav {
     font-style: italic;
 }
 
+#about {
+    max-height: 500px;    
+}
 
+#about.content-container div {      
+    min-width: 800px;
+    font-size: 2.2rem;
+    font-style: italic;        
+    overflow: auto;    
+}
 
+#about img {        
+    max-height: 100%;    
+}
+
+#contact.content-container {
+    background: rgba(0, 0, 0, 0.85);
+    flex-direction: column;
+    padding: 1em;
+    align-items: center;
+}
+
+#contact h2 {
+    text-decoration: underline;
+}
+
+#contact h1 {
+    font-style: italic;
+    color: antiquewhite;
+}

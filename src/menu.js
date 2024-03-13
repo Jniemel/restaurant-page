@@ -2,6 +2,7 @@ import './styles.css';
 import menu from './menu.JSON';
 
 function addToMenu(header, array) {
+
     // add header
     let placement = document.querySelector('.menu');
     const heading = document.createElement('h1');
@@ -9,7 +10,8 @@ function addToMenu(header, array) {
     placement.appendChild(heading);
 
     // create list of items
-    for (let i = 0; i < array.length; i++) {  
+    for (let i = 0; i < array.length; i++) { 
+
         // create item: name, price & description)
         let item = document.createElement('div');
         item.classList.add('menu-item');
@@ -23,6 +25,7 @@ function addToMenu(header, array) {
         price.textContent = array[i]["price"] + "€";
         let description = document.createElement('h5');
         description.textContent = array[i]["description"];
+
         // append item to menu
         itemRow1.append(name, price);
         itemRow2.appendChild(description);
@@ -32,6 +35,7 @@ function addToMenu(header, array) {
 }
 
 function menuTab() {
+    
     // references
     const content = document.querySelector('#content');
     const toClear = content.querySelectorAll('div');
