@@ -64,7 +64,7 @@ nav {
 }
 
 .content-container {
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: rgba(0, 0, 0, 0.75);
     flex-grow: 1;   
     display: flex;
     overflow: auto;
@@ -78,7 +78,8 @@ nav {
     padding: 1em;    
     height: 400px;
     min-width: 400px;
-    font-size: 3rem;       
+    font-size: 2.5rem;
+    font-style: italic;       
     overflow: auto;    
 }
 
@@ -87,23 +88,53 @@ nav {
 }
 
 .menu {
-    background-color: rgba(0, 0, 0, 0.75);
-    font-size: 3rem;
+    flex-grow: 1;
+    background-color: #000000bf;
+    font-size: 2.5rem;
+    margin: 0 1em 0 1em;
     padding: 1em;
-    align-self: stretch;
+    align-self: stretch;    
     display: flex;
     flex-direction: column;
     gap: 0.5em;
+    overflow: auto;
 }
 
 .menu h1 {
     border-bottom: 2px solid white;
 }
 
+.menu h1,
+.menu h3,
+.menu h4,
+.menu h5 {   
+    line-height: 1.15em;
+}
+
 .menu-item {   
     display: flex;
-    justify-content: center;
+    flex-direction: column;    
+    align-items: center;
+    
+}
+
+.name-and-price {
+    display: flex;
+    align-items: center;
     gap: 1em;
+    margin-bottom: 0;
+}
+
+.name-and-price h3 {
+    text-decoration: underline;
+}
+
+.description {
+    color: antiquewhite;
+}
+
+.description h5 {
+    font-style: italic;
 }
 
 
