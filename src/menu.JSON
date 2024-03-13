@@ -1,0 +1,53 @@
+{
+    "food":[
+        {
+            "name": "Burger-meal",
+            "price": "12",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+        },
+        {
+            "name": "Spaghetti",
+            "price": "10",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing."
+        },
+        {
+            "name": "Steak",
+            "price": "25",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do."
+        },
+        {
+            "name": "Pizza",
+            "price": "15",
+            "description": "Lorem ipsum dolor sit amet, consectetur."
+        }
+    ],
+    "desserts":[
+        {
+            "name": "Cupcakes",
+            "price": "3",
+            "description": "Lorem ipsum dolor"
+        },
+        {
+            "name": "Pancakes",
+            "price": "5",
+            "description": "Lorem ipsum dolor sit amet."
+        }
+    ],
+    "drinks":[
+        {
+            "name": "Soda",
+            "price": "2",
+            "description": "Lorem ipsum dolor"
+        },
+        {
+            "name": "Beer",
+            "price": "4",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing."
+        },
+        {
+            "name": "Wine",
+            "price": "6",
+            "description": "Lorem ipsum dolor sit amet."
+        }
+    ]
+}

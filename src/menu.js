@@ -1,4 +1,5 @@
 import './styles.css';
+import menu from './menu.JSON';
 
 function addToMenu(header, array) {
     // add header
@@ -30,60 +31,6 @@ function addToMenu(header, array) {
     }
 }
 
-let foodMenu = [
-    {
-        "name": "Burger-meal",
-        "price": "12",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-    },
-    {
-        "name": "Spaghetti",
-        "price": "10",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing."
-    },
-    {
-        "name": "Steak",
-        "price": "25",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do."
-    },
-    {
-        "name": "Pizza",
-        "price": "15",
-        "description": "Lorem ipsum dolor sit amet, consectetur."
-    }
-];
-
-let drinkMenu = [
-    {
-        "name": "Soda",
-        "price": "2",
-        "description": "Lorem ipsum dolor"
-    },
-    {
-        "name": "Beer",
-        "price": "4",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing."
-    },
-    {
-        "name": "Wine",
-        "price": "6",
-        "description": "Lorem ipsum dolor sit amet."
-    }
-];
-
-let dessertMenu = [
-    {
-        "name": "Cupcakes",
-        "price": "3",
-        "description": "Lorem ipsum dolor"
-    },
-    {
-        "name": "Pancakes",
-        "price": "5",
-        "description": "Lorem ipsum dolor sit amet."
-    },
-];
-
 function menuTab() {
     // references
     const content = document.querySelector('#content');
@@ -100,10 +47,9 @@ function menuTab() {
     content.appendChild(menuContainer);
 
     // add items to menu
-    addToMenu("Food", foodMenu);
-    addToMenu("Desserts", dessertMenu);
-    addToMenu("Drinks", drinkMenu);
-
+    addToMenu("Food", menu.food);    
+    addToMenu("Desserts", menu.desserts);
+    addToMenu("Drinks", menu.drinks);
 }
 
 export default menuTab;
